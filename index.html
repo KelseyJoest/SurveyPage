@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <center>
+  <style>
+    h1 {
+      font-family:"Lucida handwriting", "Courier New", monospace;
+    }
+   div {
+    padding-left: 40%;
+   }
+  
+    
+  </style>
+
+    <link rel="stlyesheet" href="styles.css" />
+  </head>
+  
+<body style="background: linear-gradient(rgb(231, 180, 210), rgb(141, 228, 235));">
+   
+    <header class="header">
+      <h1 style="border-width:3px; border-style:solid; border-color:#d906ec2a; padding: 1em;" id="title" class="text-center">Kelsey's Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help me find the best glitter
+      </p> </header> <br>
+    </center>
+    </header>
+    <div class="form-group">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      /><br>
+  
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      /><br>
+    
+    <label id="number-label" for="number"
+    >Age<span class="clue">(optional)</span></label>
+    <input
+    type="number"
+    name="age"
+    id="number"
+    min="10"
+    max="99"
+    class="form-control"
+    placeholder="Age"
+    /><br>
+
+
+  
+    <p>Which option is the best nail polish?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value> Select Fabulous Polish</option>
+      <option value="rainbow unicorn">Rainbow Unicorn</option>  
+      <option value="holographic">Hololgraphic</option>
+      <option value="black glitter">Black Glitter</option>
+      <option value="pearlecent">Pearlecent</option>
+    </select><br>
+ 
+  
+  
+    <p>Would you like a full set of FREE glitter acrylics?</p>
+    <label>
+      <input
+        name="user-recommend"
+        value="definitely"
+        type="radio"
+        class="input-radio"
+        checked
+      />Definitely</label>
+    <label>
+      <input
+        name="user-recommend"
+        value="maybe"
+        type="radio"
+        class="input-radio"
+      />Maybe</label>
+
+    <label
+      ><input
+        name="user-recommend"
+        value="not-sure"
+        type="radio"
+        class="input-radio"
+      />Not sure</label>
+  
+
+ 
+    <p>What color goes best with Holo?</p>
+    <select id="most-like" name="mostlike" class="form-control" required>
+      <option disabled selected value>Select an Option</option>
+      <option value="pink">Pink</option>
+      <option value="black">Black</option>
+      <option value="green">Green</option>
+      <option value="white">White</option>
+    </select><br>
+  
+
+  
+    <p>
+    What would you like to see in the world of glitter nails?
+    <span class="clue">(Check all that apply)</span>
+    </p>
+    <label>
+      <input
+        name="prefer"
+        value="more-glitter"
+        type="checkbox"
+        class="input-checkbox"
+        />More Gliiter</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="true-holo"
+        type="checkbox"
+        class="input-checkbox"
+        />True Holo</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="rainbow"
+        type="checkbox"
+        class="input-checkbox"
+        />Rainbow</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="rainbow-unicorn"
+        type="checkbox"
+        class="input-checkbox"
+        />Rainbow Unicorn</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="unicorn-poop"
+        type="checkbox"
+        class="input-checkbox"
+        />Unicorn Poop</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="pearlecent"
+        type="checkbox"
+        class="input-checkbox"
+        />Pearlecent</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="multi-chrome"
+        type="checkbox"
+        class="input-checkbox"
+        />Multi-Chrome</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="color-shift"
+        type="checkbox"
+        class="input-checkbox"
+        />Color Shift</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="fine-glitter"
+        type="checkbox"
+        class="input-checkbox"
+        />Fine Glitter</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="thick-glitter"
+        type="checkbox"
+        class="input-checkbox"
+        />Thick Glitter</label><br>
+    <label>
+      <input
+        name="prefer"
+        value="none"
+        type="checkbox"
+        class="input-checkbox"
+        />None because I hate everything >:(
+    </label><br>
+ 
+
+  
+    <p>How do you feel about acrylic toe nails? Explain your answer.</p>
+    <textarea
+      id="comments"
+      class="input-textarea"
+      name="comment"
+      placeholder="Enter your comment here..."
+    ></textarea><br>
+
+
+
+    <button type="submit" id="submit" class="submit-button">
+    Submit
+    </button>
+  </div>
+
+      </div>
+    </form>
+  </body>
+</html>
